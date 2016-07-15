@@ -1,8 +1,51 @@
 # TAC Workshop 20160715
 
+## 文件说明
+
+1. SingleViewDemo
+
+	实现内容：
+	
+	* 单页应用，主要功能是点击button，根据textField的输入内容修改上面的Label显示内容
+	
+	涉及知识点：
+	
+	* Storyboard入门与简单使用
+	* UIButton的连接（Action和Outlet的不同）与设置
+	* UITextField，UILabel连接与设置
+
+2. TableViewDemo
+
+	实现内容：
+	
+	* TableView与Tabbar结合起来的的简单应用，只实现了最后一个tab，主要功能是点击tab右上角加载不一样的tableviewcell
+	
+	涉及知识点：
+	
+	* Tabbar的使用、Tabbar Item图标与名称的设置
+	* NavigationBar的基本概念、两种不同使用方式、Title的设置
+	* TableViewController的概念、Cell的概念等（参考本文最后tableview的知识点部分）
+	* MVC的简单介绍
+	* optional语法的简单介绍
+
+3. CocoaPodsDemo
+	
+	实现内容：
+	
+	* 与2相同，tableview没有2中那么复杂，但是在2的基础上加入了一个tabbar的动画第三方库
+	
+	涉及知识点：
+	
+	* CocoaPods的安装与使用
+	* 其他同2
+
+4. UIDesign_Demo.sketch
+
+	用于倒出图片、对2中的Demo进行UI的支撑（也可以学习一下）
+
 ## Sketch to Xcode
 
-首先，我收回程序员都可以做UI这句话（挥手）
+首先，我收回任何程序员都可以做UI这句话（挥手），不然要设计师干嘛呢（＝。＝）
 
 不过原生UI还是不会骗人的，而今天的重点是实现一些简单的自定义UI
 
@@ -99,7 +142,9 @@ $ pod install --no-repo-update --verbose
 
 然后等待完成就好了，依然会很久……
 
-然后我们就可以开始愉快地使用第三方库了！
+然后我们就可以开始愉快地使用第三方库了！只要在你要使用的地方前加入例如```# import RAMAnimatedTabBarController```的字样就可以了，这里我们没有使用到import，因为这个UI库可以全部使用storyboard设置
+
+（注：准备的Demo中没有用到LTNavigationBar）
 
 ## UITableViewController入门
 
@@ -137,7 +182,7 @@ Tableview的几个重要元素：
 4. 如果是自定义的cell，需要实现cell的自定义类并关联
 
 扩展内容：
-自定义cell（可能不讲）
+自定义cell（暂时没有讲）
 
 ====
 Copyright &copy; Mandy Xue 2016.07
